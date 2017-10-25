@@ -1,0 +1,272 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* reset ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2d3133;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  outline-width: 0;
+}
+
+form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+
+/* 共通レイアウト ================================ */
+body {
+  color: #2d3133;
+  background-color: #fdb50a;
+  margin: 0;
+  min-height: 1vh;
+}
+
+.main {
+  position: absolute;
+  top: 7vh;
+  width: 100%;
+  height: auto;
+  min-height: 93vh;
+  background-color: #f5f8fa;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+/* ヘッダー ================================ */
+header {
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  z-index:1;
+  background-color: #fdb50a;
+  width: 100%;
+}
+
+.header-logo {
+  float: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 22px;
+  line-height: 7vh;
+}
+
+.header-logo a{
+  margin-left: 1vh;
+  width: 20vw;
+  color: white;
+  font-size: 3vh;
+}
+
+.header-menus {
+  float: right;
+  padding-right: 20px;
+}
+
+.header-menus li {
+  float: left;
+  line-height: 7vh;
+  font-size: 13px;
+  color: white;
+  padding-left: 15px;
+}
+
+.header-menus a {
+  float: left;
+  font-size: 1.5vh;
+  color: white;
+}
+
+.header-menus .fa {
+  padding-right: 5px;
+}
+
+.header-menus input[type="submit"] {
+  padding: 0 20px;
+  float: left;
+  line-height: 64px;
+  color: white;
+  margin: 0;
+  font-size: 13px;
+}
+
+/* top ================================ */
+.top-main {
+  padding: 200px 0 100px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  color: white;
+  background-color: #fdb50a;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+                                                        //   ここに背景画像
+  background-image: url("/top_5.png");
+}
+
+.top-message {
+  position: relative;
+  color: black;
+}
+
+.top-main h2 {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+}
+
+.top-main p {
+  margin-top: 2vh;
+  font-size: 1.5vh;
+}
+
+.top-img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+/* about ================================ */
+.about-main {
+  padding: 180px 0 0;
+  width: 100vw;
+  height: 93vh;
+  color: white;
+}
+
+.about-main h2 {
+  font-size: 5vh;
+  margin: 0 0 3% 15vw;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about-main p {
+  margin: 0 0 0 15vw;
+  text-align: left;
+  line-height: 1.8em;
+  font-weight: 200;
+  font-size: 2.2vh;
+}
+
+.about-img {
+  position: absolute;
+  margin: 13% auto 0;
+  left: 10vw;
+  width: 80vw;
+}
+
+/* フォーム================================ */
+.form {
+  max-width: 80vw;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+.form p {
+  font-size: 1.5vh;
+}
+
+.form-heading {
+  font-weight: 300;
+  margin: 4vh 0 3vh;
+  font-size: 4vh;
+  color: #bcc8d4;
+}
+.users-form {
+  width: 80vw;
+}
+.form-body {
+  padding: 40px;
+}
+
+.form-error {
+  color: #ff4d75;
+}
+
+.form input {
+  width: 100%;
+  border: 1px solid #d8dadf;
+  padding: 1vh;
+  color: #57575f;
+  font-size: 2vh;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 110px;
+  font-size: 3vh;
+  letter-spacing: 2px;
+}
+
+.form input[type="submit"] {
+  background-color: #fdb50a;
+  color: white;
+  cursor: pointer;
+  font-weight: 300;
+  width: 300px;
+  border-radius: 2px;
+  margin-top: 1vh;
+  margin-bottom: 0;
+  float: right;
+}
+
+.form-body:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* フラッシュ ================================ */
+.flash {
+  padding: 10px 0;
+  color: white;
+  background: rgb(251, 170, 88);
+  text-align: center;
+  position: absolute;
+  top: 7vh;
+  z-index: 10;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  font-size: 2vh;
+}
