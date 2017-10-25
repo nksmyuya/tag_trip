@@ -57,8 +57,8 @@
 }
 
 .user img {
-  width: 80px;
-  height: 80px;
+  width: 30vw;
+  height: 30vw;
   border-radius: 40%;
   box-shadow: 0 2px 6px #c1ced7;
   margin: 20px 0 10px;
@@ -66,17 +66,19 @@
 }
 
 .user h2 {
-  font-size: 20px;
+  margin: 5% auto 3%; 
+  font-size: 5em;
   font-weight: 600;
   line-height: 1.2;
 }
 
 .user p {
-  font-size: 13px;
-  margin-bottom: 15px;
+  font-size: 2em;
+  margin-bottom: 3%;
 }
 
 .user a {
+  font-size: 1.5em;
   color: #8899a6;
   text-decoration: underline;
   font-weight: 200;
@@ -100,7 +102,7 @@
 }
 
 .user-tabs li.active {
-  border-bottom: 2px solid #3ecdc6;
+  border-bottom: 7px solid #3ecdc6;
 }
 
 .user-tabs li.active a {
@@ -108,8 +110,9 @@
 }
 
 .user-tabs a {
+  font-size: 2em;
   display: inline-block;
-  padding: 16px 30px;
+  padding: 1em 2em;
   color: #afb6bf;
 }
 
